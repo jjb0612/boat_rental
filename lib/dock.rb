@@ -29,6 +29,11 @@ class Dock
         end
     end
 
+    def return(boat)
+        @boats.delete(boat)
+        @renter.pop
+    end
+
     def revenue
         total = 0
         @boats.each do |boat|
